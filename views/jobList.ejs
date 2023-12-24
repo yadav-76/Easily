@@ -1,0 +1,23 @@
+<div style="display:flex; flex-wrap: wrap;">
+    <% jobs.forEach((job)=>{ %>
+    <div class="card" style="width: 18rem; margin:2rem;  min-width:250px;height: auto;">
+        <div class="card-body ">
+            <h3 class="card-title" style="color:green;"><%= job.company %></h3>
+            <h5 class="card-title"><%= job.Designation %></h5>
+            <h6 class="card-subtitle mb-2 text-body-secondary"><%= job.location %></h6>
+            <h6>CTC:<%= job.CTC %></h6>
+            <h6>Skills</h6>
+            <div style="height: 100px;  overflow-y:scroll;">
+                <ol>
+            <% job.skills.forEach((skill)=>{ %>
+                <div><li><%= skill %></li></div>
+
+            <% }) %>
+        </ol>
+        </div>
+
+            <a href="/viewDetails/<%= job.id %>" class="card-link"><button type="button" class="btn btn-outline-success">View Details</button></a>
+        </div>
+        </div>
+    <% }) %>
+        </div>

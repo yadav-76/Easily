@@ -1,0 +1,58 @@
+<div class="add-jobs" style="margin:40px; background-color: bisque; width:50vw; padding: 30px;border-radius: 40px;
+box-shadow: 20px 20px 60px #00000041 ,inset -20px 60px #ffffff40;
+font-family: cursive;">
+    <form class="update-form" method="post" action="/updateDetails/:id" >
+        <div class="mb-3">
+        <label for="company" class="form-label">Company name</label>
+        <input type="text" class="form-control update-input" id="company" aria-describedby="emailHelp" name="company" placeholder="Company name">
+        </div>
+        <div class="mb-3">
+        <label for="location" class="form-label">Location</label>
+        <input type="text" class="form-control update-input"  name="location" placeholder="Enter location">
+        </div>
+        <div class="mb-3 update-ctc ">
+            <label for="CTC" class="form-label">CTC</label>
+            <input type="number" class="form-control CtcOpen"  name="CTC" placeholder="Enter Salary">
+            <div class="">
+                <label for="Designation" class="form-label" style="margin:10px;">Designation</label>
+                <select name="Designation" id="" class="jobs-dropdown"> 
+                    <option value="SDE-1">SDE-1</option>
+                    <option value="SDE-2">SDE-2</option>
+                    <option value="MERN Dev">MERN developer</option>
+                    <option value="MEAN Dev">MEAN developer</option>
+                    <option value="Front End Dev">Front End Developer</option>
+                    <option value="Back End Dev">Back End Developer</option>
+                    <option value="Full Stack dev">Full STack Developer</option>
+                    <option value="React Dev`">React Dev</option>
+                </select>
+            </div>
+        </div>
+        <div class="mb-3">
+            <div class="">
+                <label for="jobs-list" class="form-label">Skills</label>
+                <select name="skills" id="" class="jobs-dropdown" style="height: 80px;" multiple> 
+                    <option value="HTML">HTML</option>
+                    <option value="CSS">CSS</option>
+                    <option value="JAVA SCRIPT">JAVA SCRIPT</option>
+                    <option value="REACT">REACT</option>
+                    <option value="NODEJS">NODE JS</option>
+                    <option value="JAVA">JAVA</option>
+                    <option value="PYTHON">PYTHON</option>
+                    <option value="MONGO DB">MONGO DB</option>
+                    <option value="SQL">SQL</option>
+                    <option value="ANGULAR">ANGULAR</option>
+                    <option value="C++">C++</option>
+                    <option value="GIT">GIT & GITHUB</option>
+                </select>
+            </div>
+            
+        </div>
+        <div class="mb-3" style="display: flex;">
+            <label for="openings" class="form-label">Number of Openings</label>
+            <input type="number" class="form-control CtcOpen" style="width:150px;" name="openings" placeholder="enter openings">
+            <label for="deadline" style="margin-left: 10px;" class="form-label">Deadline</label>
+            <input type="text" class="form-control CtcOpen"  name="deadline" placeholder="dd-mm-yyyy">
+        </div>
+        <button type="submit" class="btn btn-primary update-input">Submit</button>
+    </form>
+</div>

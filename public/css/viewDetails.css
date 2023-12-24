@@ -1,0 +1,167 @@
+body{
+    background-image: url(https://www.upay.org.in/wp-content/uploads/2020/04/Seccond-Career-Header-Background.png);
+    background-size: contain;
+}
+.view-body{
+    width:80%;
+    height:auto;
+    min-height: 70%;
+    margin:3%;
+    background-color: rgba(240, 255, 255, 0.878) !important;
+    border-radius: 40px;
+    box-shadow: 20px 20px 60px #00000041 ,inset -20px 60px #ffffff40;
+    font-family: cursive;
+}
+.details{
+    position: relative;
+    /* border:2px solid black; */
+    top:20%;
+}
+.skills button{
+    background-color: inherit;
+}
+.skills button:hover{
+    background-color:rgb(5, 202, 5);
+}
+.Description{
+    position: relative;
+    top:5%;
+}
+.details{
+    margin:2rem;
+}
+.apply:hover{ 
+    background-color:rgb(5, 202, 5) !important;
+}
+
+
+
+/* CSS for FORMS */
+
+
+.outer{
+    width:32%;
+    min-height: 70%;
+    background-color:white;
+    border-radius: 5%;
+    display: flex;
+    position:absolute;
+    left:30%;
+    top:15%;
+    justify-content: center;
+    box-shadow: 20px 20px 60px #00000041 ,inset -20px 60px #ffffff40;
+    font-family: cursive;
+    font-size: medium;
+
+}
+.forms{
+    max-width: 70%;
+    height:auto;
+    padding:2rem;
+    background-color:white;
+    position :relative;
+    top:10%;
+    margin:2rem;
+    box-shadow: 20px 20px 60px #00000041 ,inset -20px 60px #ffffff40;
+    border-radius: 10%;
+}
+.new-margin{
+    margin-bottom: 1rem;
+}
+.new-input{
+    height:25px;
+    width:200px;
+    border-radius: 5px;
+}
+
+.close-button button{
+    position: relative;
+    left:420px;
+    width:30px;
+    top:20px;
+    height:30px;
+    background-color: inherit;
+    border-radius: 50%;
+}
+.close-button button:hover{
+    background-color:green;
+    
+}
+.submit-button{
+    width:200px;
+    background-color: inherit;
+    height:25px;
+    border-radius: 5px;
+    color:black;
+    padding:2px;
+    
+}
+.submit-button:hover{
+    background-color:rgb(16, 124, 16);
+    color:white;
+    
+}
+#new_user{
+    height:30px;
+    position:absolute;
+    top:72%;
+}
+#lightbox{
+    visibility: hidden;
+    position:fixed;
+    top:30%;
+    left:0;
+    transition: all 0.7s ease-in;
+}
+#lightbox:target{
+    visibility: visible;
+    left:30%;
+}
+.add-jobs{
+    background-color: white;
+    margin: 2rem;
+    width:auto;
+}
+.update-form{
+    margin:1rem;
+}
+.update-input{
+    margin-left:1.2rem;
+    width:100%;
+}
+.update-ctc{
+    display: flex;
+}
+.CtcOpen{
+    width:300px;
+    margin-left: 1rem;
+}
+.add-dropdown{
+    width:auto;
+    margin-left: 1rem;
+}
+.jobs-dropdown{
+    width:250px;
+    margin-left: 1rem;
+    height:33px;
+}
+.add-jobs{
+    box-shadow: 20px 20px 60px #00000041 ,inset -20px 60px #ffffff40;
+    border-radius: 10px;
+    padding: 15px;
+    width:fit-content;
+
+}
+::-webkit-scrollbar {
+    width: 5px; /* Width of the scrollbar */
+  }
+  ::-webkit-scrollbar-track {
+    background-color:inherit; /* Color of the scrollbar track */
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color:rgb(228, 223, 223); /* Color of the scrollbar handle */
+    border-radius: 6px; /* Radius of the scrollbar handle corners */
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #555; /* Color of the scrollbar handle on hover */
+  }

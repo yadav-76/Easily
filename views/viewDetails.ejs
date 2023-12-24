@@ -1,0 +1,34 @@
+
+<div class="view-body" style="background-color:rgb(242, 236, 236); border-radius: 40px;
+box-shadow: 20px 20px 60px #00000041 ,inset -20px 60px #ffffff40;
+font-family: cursive; ">
+    <div class="Description"><p style="font-size: 40px; color:green; text-align: center;">Job Opportunity By <%= jobs.company %></p></div>
+    <div class="Details" style="margin: 30px;">
+    <p>
+    <h1><%= jobs.company %></h1>
+    <h3><%= jobs.Designation %></h3>
+    <% if(locals.userEmail){ %>
+    <a href="/updateDetails/<%= jobs.id %>"><i class="fa-solid fa-pen-to-square fa-lg" style="color:green"></i></a>
+    <a href="/deleteJob/<%= jobs.id %>"><i class="fa-solid fa-trash fa-lg" style="color:red;"></i></a>
+    <% } %>
+</p>
+<ul>
+    <li>Location: <%= jobs.location %></li>
+    <li>CTC: <%= jobs.CTC %></li>
+    <li>Deadline: <%= jobs.deadline %> </li>
+    <li>Number of openings: <%= jobs.openings %></li>
+    <li>Applicants:<%= jobs.applicants %></li>
+</ul>
+<div class="skills">
+    <h4>Skills Required:</h4>
+    <% jobs.skills.forEach((skill)=>{ %>
+    <button style="margin:1px;"><%= skill  %></button>
+<% }) %>
+</div>
+
+
+<a href="/form" id="applyJS"><button type="button" class="btn btn-success apply" style="margin:1.2rem; width:150px; height:30px; background-color:green; color:white;">Apply now</button></a>
+</div>
+
+</div>
+

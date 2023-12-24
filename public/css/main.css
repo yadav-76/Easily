@@ -1,0 +1,41 @@
+
+body{
+    background-image: url(https://www.upay.org.in/wp-content/uploads/2020/04/Seccond-Career-Header-Background.png);
+    background-size: 1600px;
+}
+
+
+
+.Btn-position{
+    /* border:2px solid black; */
+    position: relative;
+    top:160px;
+    left:20%;
+    height:auto;
+    
+
+}
+.Btn-position{
+    width: 600px;
+}
+.Btn-position p{
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom:3px;
+}
+.Btn-position h1{
+    margin-bottom:20%;
+    opacity: 0;
+    opacity: 0;
+    animation: fadeInOut 3.2s infinite;
+    
+
+}
+
+      /* Keyframes for the fadeInOut animation */
+@keyframes fadeInOut {
+        0%, 100% { opacity: 0; }
+        25%, 75% { opacity: 1; }
+    }
+
+
